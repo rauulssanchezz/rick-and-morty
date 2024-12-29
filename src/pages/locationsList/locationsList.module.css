@@ -19,12 +19,6 @@
         transition: all 0.3s ease-in;
     }
 
-    .searchIcon{
-        position: relative;
-        left: -1.5rem;
-        top: 0.35rem;
-    }
-
     .searchBar::placeholder{
         color: var(--color);
     }

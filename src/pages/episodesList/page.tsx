@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import style from "./episodesList.module.css";
-import search from "../../assets/search.png";
 import { useEffect, useState } from "react";
 import EpisodeView from "../../components/episodeView/episodeView";
 
@@ -31,7 +30,6 @@ export default function EpisodesList() {
         <div className={style.main}>
             <div className={style.searchBarContainer}>
                 <input type="text" className={style.searchBar} placeholder="Search for a character..." onChange={handleSearch}/>
-                <img className={style.searchIcon} src={search} alt="search" width={20} height={20}/>
             </div>
             <div className={style.episodesListContainer}>
                 {episodes ? episodes.map((episode: any) => (

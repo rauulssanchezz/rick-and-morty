@@ -1,6 +1,5 @@
 /* eslint-disable @typescript-eslint/no-explicit-any */
 import style from "./charactersList.module.css";
-import search from "../../assets/search.png";
 import { useEffect, useState } from "react";
 import CharacterView from "../../components/characterView/characterView";
 
@@ -31,7 +30,6 @@ export default function CharactersList() {
         <div className={style.main}>
             <div className={style.searchBarContainer}>
                 <input type="text" className={style.searchBar} placeholder="Search for a character..." onChange={handleSearch}/>
-                <img className={style.searchIcon} src={search} alt="search" width={20} height={20}/>
             </div>
             <div className={style.characterListContainer}>
                 {characters ? characters.map((character: any) => (
