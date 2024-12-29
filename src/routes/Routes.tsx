@@ -13,7 +13,6 @@ import NotFound from "../not-found";
 
 function AppRoutes(){
     return(
-        <BrowserRouter basename="/rick-and-morty">
             <Routes>
                 <Route path="/" element={<Home/>} />
                 <Route path="/CharactersList" element={<CharactersList />} />
@@ -24,7 +23,6 @@ function AppRoutes(){
                 <Route path="/EpisodeInfo" element={<EpisodeInfo />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
-        </BrowserRouter>
     );
 }
 
