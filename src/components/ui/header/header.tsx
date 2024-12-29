@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import headerIcon from "../../../assets/headericon.png";
 import menu from "../../../assets/menu.png";
 import back from "../../../assets/back.png";
+import { Link } from "react-router-dom";
 
 export default function Header() {
 
@@ -47,9 +48,9 @@ export default function Header() {
             <nav className={`${styles.nav} ${menuOpen ? styles.open: "right:0"}` }>
                 <img className={styles.close} src={back} onClick={handleMenu} alt="menu"/>
                 <ul className={styles.ul}>
-                    <li><a href="/CharactersList" className={styles.a}>Characters</a></li>
-                    <li><a href="/LocationsList" className={styles.a}>Locations</a></li>
-                    <li><a href="/EpisodesList" className={styles.a}>Episode</a></li>
+                    <li><Link to="/CharactersList" className={styles.a}>Characters</Link></li>
+                    <li><Link to="/LocationsList" className={styles.a}>Locations</Link></li>
+                    <li><Link to="/EpisodesList" className={styles.a}>Episode</Link></li>
                 </ul>
                 <div className={styles.space}></div>
             </nav>
