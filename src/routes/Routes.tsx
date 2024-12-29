@@ -15,12 +15,12 @@ function AppRoutes(){
     return(
         <Routes>
             <Route path="/" element={<Home/>} />
-            <Route path="/rick-and-morty/CharactersList" element={<CharactersList />} />
-            <Route path="/rick-and-morty/LocationsList" element={<LocationsList />} />
-            <Route path="/rick-and-morty/EpisodesList" element={<EpisodesList />} />
-            <Route path="/rick-and-morty/CharacterInfo" element={<CharacterInfo />} />
-            <Route path="/rick-and-morty/LocationInfo" element={<LocationInfo />} />
-            <Route path="/rick-and-morty/EpisodeInfo" element={<EpisodeInfo />} />
+            <Route path="/CharactersList" element={<CharactersList />} />
+            <Route path="/LocationsList" element={<LocationsList />} />
+            <Route path="/EpisodesList" element={<EpisodesList />} />
+            <Route path="/CharacterInfo" element={<CharacterInfo />} />
+            <Route path="/LocationInfo" element={<LocationInfo />} />
+            <Route path="/EpisodeInfo" element={<EpisodeInfo />} />
             <Route path="*" element={<NotFound />} />
         </Routes>
     );
