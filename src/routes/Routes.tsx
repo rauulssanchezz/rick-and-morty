@@ -1,4 +1,4 @@
-import { Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import CharactersList from "../pages/charactersList/page";
 import LocationsList from "../pages/locationsList/page";
 import EpisodesList from "../pages/episodesList/page";
@@ -13,16 +13,18 @@ import NotFound from "../not-found";
 
 function AppRoutes(){
     return(
-        <Routes>
-            <Route path="/" element={<Home/>} />
-            <Route path="/CharactersList" element={<CharactersList />} />
-            <Route path="/LocationsList" element={<LocationsList />} />
-            <Route path="/EpisodesList" element={<EpisodesList />} />
-            <Route path="/CharacterInfo" element={<CharacterInfo />} />
-            <Route path="/LocationInfo" element={<LocationInfo />} />
-            <Route path="/EpisodeInfo" element={<EpisodeInfo />} />
-            <Route path="*" element={<NotFound />} />
-        </Routes>
+        <BrowserRouter basename="/rick-and-morty">
+            <Routes>
+                <Route path="/" element={<Home/>} />
+                <Route path="/CharactersList" element={<CharactersList />} />
+                <Route path="/LocationsList" element={<LocationsList />} />
+                <Route path="/EpisodesList" element={<EpisodesList />} />
+                <Route path="/CharacterInfo" element={<CharacterInfo />} />
+                <Route path="/LocationInfo" element={<LocationInfo />} />
+                <Route path="/EpisodeInfo" element={<EpisodeInfo />} />
+                <Route path="*" element={<NotFound />} />
+            </Routes>
+        </BrowserRouter>
     );
 }
 
