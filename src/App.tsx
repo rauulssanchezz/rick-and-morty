@@ -5,7 +5,7 @@ import AppRoutes from './routes/Routes';
 
 function App() {
   return(
-    <BrowserRouter>
+    <BrowserRouter basename="/rick-and-morty">
       <AppRoutes/>
     </BrowserRouter>
   );
