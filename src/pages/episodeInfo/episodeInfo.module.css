@@ -1,0 +1,40 @@
+.main{
+    margin-top: 7rem;
+    width: 100%;
+    height: 100%;
+    padding:2rem;
+    flex-grow: 1;
+
+    .h1{
+       text-align: center;
+    }
+
+        .episodeInfo{
+            width: 100%;
+            margin: auto;
+            .episodeDetails{
+                width: 100%;
+                margin-top: 1rem;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+            }
+        }
+    .characters{
+        width: 100%;
+        margin-top: 5rem;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        .h2{
+            text-align: center;
+        }
+        .charactersContainer{
+            margin-top: 1rem;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+    }
+}

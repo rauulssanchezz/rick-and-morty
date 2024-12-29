@@ -1,0 +1,27 @@
+.main{
+    margin-top: 13%;
+    width: 100%;
+    height: 100%;
+    padding:0 5%;
+    flex-grow: 1;
+    .container{
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 2%;
+    }
+  
+    .h3{
+        margin-top: 5%;
+    }
+  }
+  
+  .notFound{
+    margin-top: 13%;
+    width: 100%;
+    height: 40vh;
+    padding:0 5%;
+    flex-grow: 1;
+    text-align: center;
+  }

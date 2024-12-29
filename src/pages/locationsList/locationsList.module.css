@@ -1,0 +1,43 @@
+.main{
+    margin-top: 8rem;
+    width: 100%;
+    height: 100%;
+    padding:3rem 5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .searchBar{
+        width: 20rem;
+        padding: 0.5rem;
+        background: var(--button-background);
+        border: none;
+        box-shadow: 10px 10px 10px var(--shadows);
+        border-radius: 1rem;
+        color: var(--color);
+        transition: all 0.3s ease-in;
+    }
+
+    .searchIcon{
+        position: relative;
+        left: -1.5rem;
+        top: 0.35rem;
+    }
+
+    .searchBar::placeholder{
+        color: var(--color);
+    }
+
+    .searchBar:focus{
+        outline:solid 3px var(--foreground);
+        transform: scale(1.03);
+    }
+
+    .locationsListContainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+}
