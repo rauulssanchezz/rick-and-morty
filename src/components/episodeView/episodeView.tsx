@@ -19,7 +19,7 @@ export default function EpisodeView(
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/episodes/EpisodeInfo', {
+        navigate('/EpisodeInfo', {
             state: {
                 episodeName,
                 episodeAirDate,

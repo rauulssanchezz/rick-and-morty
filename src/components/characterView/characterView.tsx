@@ -25,7 +25,7 @@ export default function CharacterView({
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/characters/CharacterInfo', {
+        navigate('/CharacterInfo', {
           state: {
             characterImg,
             characterName,

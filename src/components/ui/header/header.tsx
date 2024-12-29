@@ -47,9 +47,9 @@ export default function Header() {
             <nav className={`${styles.nav} ${menuOpen ? styles.open: "right:0"}` }>
                 <img className={styles.close} src={back} onClick={handleMenu} alt="menu"/>
                 <ul className={styles.ul}>
-                    <li><a href="/characters/CharactersList" className={styles.a}>Characters</a></li>
-                    <li><a href="/locations/LocationsList" className={styles.a}>Locations</a></li>
-                    <li><a href="/episodes/EpisodesList" className={styles.a}>Episode</a></li>
+                    <li><a href="/CharactersList" className={styles.a}>Characters</a></li>
+                    <li><a href="/LocationsList" className={styles.a}>Locations</a></li>
+                    <li><a href="/EpisodesList" className={styles.a}>Episode</a></li>
                 </ul>
                 <div className={styles.space}></div>
             </nav>

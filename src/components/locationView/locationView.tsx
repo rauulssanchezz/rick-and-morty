@@ -19,7 +19,7 @@ export default function LocationView(
     const navigate = useNavigate();
 
     const handleClick = () => {
-        navigate('/locations/LocationInfo', {
+        navigate('/LocationInfo', {
             state: {
                 locationName,
                 locationType,
