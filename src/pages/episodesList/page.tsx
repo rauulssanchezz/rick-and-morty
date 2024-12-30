@@ -29,7 +29,7 @@ export default function EpisodesList() {
     return(
         <div className={style.main}>
             <div className={style.searchBarContainer}>
-                <input type="text" className={style.searchBar} placeholder="Search for a character..." onChange={handleSearch}/>
+                <input type="text" className={style.searchBar} placeholder="Search for a episode..." onChange={handleSearch}/>
             </div>
             <div className={style.episodesListContainer}>
                 {episodes ? episodes.map((episode: any) => (

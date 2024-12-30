@@ -39,7 +39,7 @@ export default function LocationsList() {
     return(
         <div className={style.main}>
             <div className={style.searchBarContainer}>
-                <input type="text" className={style.searchBar} placeholder="Search for a character..." onChange={handleSearch}/>
+                <input type="text" className={style.searchBar} placeholder="Search for a location..." onChange={handleSearch}/>
             </div>
             <div className={style.locationsListContainer}>
                 {locations ? locations.map((location: any) => (
