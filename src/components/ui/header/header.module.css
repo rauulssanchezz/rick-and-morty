@@ -94,7 +94,7 @@
             align-items: center;
             background: var(--background);
             box-shadow: -10px 0 10px var(--shadows);
-            transition: all 0.8s ease-in;
+            transition: all 0.3s ease-in;
 
             .space {
                 height: 70vh;
@@ -129,7 +129,7 @@
         }
 
         .select {
-            display: none; 
+            margin-bottom: 10rem;
         }
 
         .menu {

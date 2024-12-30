@@ -55,13 +55,12 @@ export default function Header() {
                     <Link to="/EpisodesList" className={styles.a}><li className={styles.li}>Episode</li></Link>
                 </ul>
                 <div className={styles.space}></div>
+                <select id="theme" className={styles.select} value={theme} onChange={handleThemeChange}>
+                    <option value="" disabled hidden>Theme</option>
+                    <option value={"dark"}>Dark</option>
+                    <option value={"light"}>Light</option>
+                </select>
             </nav>
-            
-            <select id="theme" className={styles.select} value={theme} onChange={handleThemeChange}>
-                <option value="" disabled hidden>Theme</option>
-                <option value={"dark"}>Dark</option>
-                <option value={"light"}>Light</option>
-            </select>
         </header>
     );
 }
