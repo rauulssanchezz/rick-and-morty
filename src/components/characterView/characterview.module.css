@@ -50,7 +50,7 @@
     width: 50%;
 }
 
-@media screen and (max-width: 481px){
+@media screen and (max-width: 600px){
     .card{
         width: 20rem;
         height: 15rem;
@@ -73,4 +73,30 @@
         width: 100%;
     }
     
+}
+
+@media screen and (max-width: 400px){
+    .card{
+        width: 15rem;
+        height: 30rem;
+        text-align: center;
+        padding: 1rem;
+        .cardContent{
+            margin: auto;
+            gap: 0;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            .characterInfo{
+                width: 100%;
+                margin: 0;
+                padding: 0;
+                .characterInfo div{
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
 }

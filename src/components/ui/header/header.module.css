@@ -41,7 +41,7 @@
             position: relative;
             top: 1.5rem;
             left: -3rem;
-            transition: scale 0.5s ease;
+            transition: scale 0.3s ease;
         }
 
         .close:hover {
@@ -58,14 +58,12 @@
             justify-content: space-around;
             align-items: center;
 
-            .li {
-                .a {
-                    transition: color 0.3s ease-in;
-                }
+            .a {
+                transition: color 0.3s ease-in;
+            }
 
-                .a:hover {
-                    color: #2961b4;
-                }
+            .a:hover {
+                color: #2961b4;
             }
         }
     }
@@ -87,7 +85,7 @@
 
         .nav {
             position: absolute;
-            right: -1000px;
+            right: -500px;
             top: 0;
             height: 100vh;
             width: 10rem;
@@ -112,6 +110,10 @@
                 flex-direction: column;
                 width: 100%;
                 padding: 1rem;
+
+                .a {
+                    width: 100%;
+                }
 
                 .li {
                     padding: 1rem;

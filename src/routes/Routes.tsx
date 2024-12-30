@@ -21,7 +21,7 @@ function AppRoutes(){
                 <Route path="/CharacterInfo" element={<CharacterInfo />} />
                 <Route path="/LocationInfo" element={<LocationInfo />} />
                 <Route path="/EpisodeInfo" element={<EpisodeInfo />} />
-                <Route path="*" element={<NotFound />} />
+                <Route path="/*" element={<NotFound />} />
             </Routes>
     );
 }

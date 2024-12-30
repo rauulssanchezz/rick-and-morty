@@ -48,10 +48,9 @@
     cursor: pointer;
     transform: scale(1.05);
 }
-
-@media screen and (max-width: 321px){
+@media screen and (max-width: 400px){
     .card{
-        width: 13rem;
+        width: 18rem;
         height: 20rem;
         text-align: center;
         padding: 1rem;
