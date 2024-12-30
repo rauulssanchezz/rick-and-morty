@@ -34,7 +34,7 @@ export default function EpisodeView(
             <div className={style.cardContent}>
                 <div className={style.episodeHeader}>
                     <h3 className={style.h3}>{episodeName}</h3>
-                    <p>Click for know more</p>
+                    <p className={style.p}>Click to know more</p>
                 </div>
                 <div className={style.episodeInfo}>
                     <div>

@@ -50,28 +50,30 @@
 }
 @media screen and (max-width: 400px){
     .card{
-        width: 18rem;
+        width: 15rem;
         height: 20rem;
         text-align: center;
         padding: 1rem;
         .cardContent{
             margin: auto;
             gap: 0;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
+            display: block;
 
             .episodeHeader{
                 width: 100%;
                 margin: 0;
-                .episodeHeader p{
+                display: block;
+                height: auto;
+                .p{
                     margin: 0;
                     padding: 0;
+                    text-align: start;
                 }
 
                 .episodeHeader h3{
                     margin: 0;
                     padding: 0;
+                    width: auto;
                 }
             }
 
